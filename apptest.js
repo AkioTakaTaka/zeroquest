@@ -10,11 +10,14 @@
     const outputBtn = document.getElementById('output')
     const resultArea = document.getElementById('result')
 
-    outputBtn.onclick = function sum(){
-        if (inputOne.value.length < inputTwo.value) {
+outputBtn.onclick = function sum(){
 
-            inputOne.value = '0' + inputOne.value
-        }
-        
+    while (inputOne.value.length < inputTwo.value) {
+
+        inputOne.value = '0' + inputOne.value
+
+    } 
         resultArea.textContent = inputOne.value
+        inputOne.value = ''
+        inputTwo.value = ''
 }
