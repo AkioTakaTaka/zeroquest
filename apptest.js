@@ -11,13 +11,13 @@
     const resultArea = document.getElementById('result')
 
 outputBtn.onclick = function sum(){
+    
+    let inputOneValue = inputOne.value
 
-    while (inputOne.value.length < inputTwo.value) {
+    while (inputOneValue.length < inputTwo.value) {
 
-        inputOne.value = '0' + inputOne.value
+        inputOneValue = '0' + inputOneValue
 
     } 
-        resultArea.textContent = inputOne.value
-        inputOne.value = ''
-        inputTwo.value = ''
+        resultArea.value = inputOneValue
 }
